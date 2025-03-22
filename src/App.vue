@@ -1,30 +1,30 @@
 <template>
-<div id="app">
-  <!-- Header -->
+  <div id="app">
+    <!-- Header -->
     <header class="header">
-    <div class="logo">
-      <h1>Task Manager</h1>
-    </div>
-    <div class="header-nav">
-      <ul>
-        <li><router-link to="/">Home</router-link></li>
-        <li><router-link to="/about-us">About</router-link></li>
-        <li><router-link to="/contact-us">Contact</router-link></li>
-      </ul>
-    </div>
-  </header>
+      <div class="logo">
+        <h1><router-link to="/">Task Manager</router-link></h1>
+      </div>
+      <div class="header-nav">
+        <ul>
+          <li><router-link to="/">Home</router-link></li>
+          <li><router-link to="/about-us">About</router-link></li>
+          <li><router-link to="/contact-us">Contact</router-link></li>
+        </ul>
+      </div>
+    </header>
     <router-view></router-view>
     <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-content">
-      <p>&copy; 2025 Task Manager. All Rights Reserved.</p>
-      <div class="footer-links">
-       <router-link to="/privacy-policy">Privacy Policy</router-link>
-        <router-link to="/terms">Terms Of Service</router-link>
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2025 Task Manager. All Rights Reserved.</p>
+        <div class="footer-links">
+          <router-link to="/privacy-policy">Privacy Policy</router-link>
+          <router-link to="/terms">Terms Of Service</router-link>
+        </div>
       </div>
-    </div>
-  </footer>
-</div>
+    </footer>
+  </div>
 </template>
 
 <script>
@@ -33,10 +33,6 @@ export default {
 };
 </script>
 <style scoped>
-/* */
-
-
-/* Header Styling */
 .header {
   background-color: #2c3e50;
   color: white;
@@ -48,8 +44,19 @@ export default {
 }
 
 .logo h1 {
-  font-size: 28px;
-  font-weight: 700;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.logo a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo a:hover {
+  color: #f0f0f0;
 }
 
 .header-nav ul {
@@ -67,10 +74,9 @@ export default {
 }
 
 .header-nav a:hover {
-  color: #f39c12; /* golden yellow color */
+  color: #f39c12;
 }
 
-/* Footer Styling */
 .footer {
   background-color: #34495e;
   color: white;
@@ -102,10 +108,9 @@ export default {
 }
 
 .footer-links a:hover {
-  color: #f39c12; /* golden yellow color */
+  color: #f39c12;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .header {
     flex-direction: column;

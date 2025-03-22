@@ -2,20 +2,21 @@
   <div class="about">
     <h2>About Us</h2>
     <p>
-      Welcome to Task Manager! We are dedicated to helping individuals and
-      teams stay organized and efficient. Our application allows you to manage
-      your tasks, set deadlines, and track your progress.
+      Welcome to Task Manager! We are dedicated to helping individuals and teams
+      stay organized and efficient. Our application allows you to manage your
+      tasks, set deadlines, and track your progress.
     </p>
     <p>
       Whether you're working on personal projects or collaborating with a team,
-      Task Manager is designed to simplify task management and enhance productivity.
+      Task Manager is designed to simplify task management and enhance
+      productivity.
     </p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'AboutUs',
+  name: "AboutUs",
 };
 </script>
 
@@ -24,7 +25,7 @@ export default {
   padding: 20px;
   max-width: 800px;
   margin: 0 auto;
-  height: 73vh; /* Set a minimum height for the content */
+  height: 73vh;
 }
 
 h2 {

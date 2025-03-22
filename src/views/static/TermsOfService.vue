@@ -5,12 +5,12 @@
       Welcome to Task Manager. These terms and conditions outline the rules and
       regulations for the use of our website and services.
     </p>
-</div>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'TermsOfService',
+  name: "TermsOfService",
 };
 </script>
 
@@ -19,7 +19,7 @@ export default {
   padding: 20px;
   max-width: 800px;
   margin: 0 auto;
-  height: 73vh; /* Set a minimum height for the content */
+  height: 73vh;
   overflow-y: auto;
 }
 
@@ -34,5 +34,4 @@ p {
   line-height: 1.6;
   margin-bottom: 15px;
 }
-
 </style>

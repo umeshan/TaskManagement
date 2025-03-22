@@ -6,14 +6,19 @@ module.exports = defineConfig({
   
   // Configure Webpack devtool for source maps
   configureWebpack: {
-    devtool: 'source-map', // Ensures source maps are enabled for debugging
+    devtool: 'source-map',
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, 'src'), // ✅ Ensure @ points to src
+        '@': path.resolve(__dirname, 'src'),
       },
     },
+    
   },
-  // Ensure Vue CLI doesn't strip out source maps
-  productionSourceMap: true,  // This is to include source maps in production as well, if needed
-  // Other configurations if needed can go here (e.g., proxy settings, plugins, etc.)
+  productionSourceMap: true,
+  pages: {
+    index: {
+      entry: "src/main.js",
+      title: "Task Manager",
+    },
+  },
 })
