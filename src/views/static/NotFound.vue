@@ -16,6 +16,7 @@ export default {
 .not-found {
   text-align: center;
   margin-top: 10%;
+  height: 58vh;
 }
 
 h1 {

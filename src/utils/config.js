@@ -1,3 +1,3 @@
 export default {
-    API_BASE_URL: "http://localhost:5005",
+    API_BASE_URL: "https://task-management-api-lilac.vercel.app",
   };
